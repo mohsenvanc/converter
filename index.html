@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Building Performance Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<h2>Input Parameters</h2>
+
+<div class="slider">
+  <label>Wall R-Value: <span id="wallVal"></span></label>
+  <input type="range" id="wall" min="10" max="20" step="5" value="10">
+</div>
+
+<div class="slider">
+  <label>Roof R-Value: <span id="roofVal"></span></label>
+  <input type="range" id="roof" min="20" max="30" step="5" value="20">
+</div>
+
+<div class="slider">
+  <label>Floor R-Value: <span id="floorVal"></span></label>
+  <input type="range" id="floor" min="10" max="20" step="5" value="10">
+</div>
+
+<div class="slider">
+  <label>Window U-Value: <span id="uVal"></span></label>
+  <input type="range" id="uvalue" min="0.2" max="0.4" step="0.05" value="0.2">
+</div>
+
+<div class="slider">
+  <label>Window SHGC: <span id="shgcVal"></span></label>
+  <input type="range" id="shgc" min="0.2" max="0.5" step="0.1" value="0.2">
+</div>
+
+<div class="slider">
+  <label>HRV Performance: <span id="hrvVal"></span></label>
+  <input type="range" id="hrv" min="0.7" max="0.9" step="0.1" value="0.7">
+</div>
+
+<div class="slider">
+  <label>Air Leakage: <span id="airVal"></span></label>
+  <input type="range" id="air" min="0.05" max="0.25" step="0.05" value="0.05">
+</div>
+
+<hr>
+
+<h2>Outputs</h2>
+
+<div class="slider output">
+  <label>Cost: <span id="costVal"></span></label>
+  <input type="range" id="cost" disabled>
+</div>
+
+<div class="slider output">
+  <label>TEDI: <span id="tediVal"></span></label>
+  <input type="range" id="tedi" disabled>
+</div>
+
+<div class="slider output">
+  <label>TEUI: <span id="teuiVal"></span></label>
+  <input type="range" id="teui" disabled>
+</div>
+
+<div class="slider output">
+  <label>GHGI: <span id="ghgiVal"></span></label>
+  <input type="range" id="ghgi" disabled>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

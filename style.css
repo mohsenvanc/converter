@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.slider {
+  margin-bottom: 25px;
+}
+
+label {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+input[type="range"] {
+  width: 100%;
+  height: 36px;          /* بزرگ برای موبایل */
+  accent-color: #2563eb;
+}
+
+.output input[type="range"] {
+  opacity: 0.6;
+}
