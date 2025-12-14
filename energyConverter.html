@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Linked Sliders</title>
+  <style>
+    .slider-container {
+      width: 300px;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+R Value Converter:
+  <div class="slider-container">
+    <label>
+      Wall R Value:
+      <span id="valueA">10</span>
+    </label>
+    <input
+      type="range"
+      id="sliderA"
+      min="10"
+      max="16"
+      step="1"
+      value="10"
+    >
+  </div>
+
+  <div class="slider-container">
+    <label>
+      Roof R Value:
+      <span id="valueB">20</span>
+    </label>
+    <input
+      type="range"
+      id="sliderB"
+      min="20"
+      max="35"
+      step="1"
+      value="20"
+      disabled
+    >
+  </div>
+
+  <script src="energyConverter.js"></script>
+</body>
+</html>
